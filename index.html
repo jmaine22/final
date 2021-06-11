@@ -8,6 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="icon" href="../../favicon.ico">
     <!----
     <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/">
@@ -77,129 +81,128 @@
         <img src="/images/AdobeStock_228227544.jpeg" class="img-circle img-thumbnail img-responsive" alt="Pizza_logo">
         <p class="lead">Pizza ipsum dolor amet aute sausage occaecat deep crust. Pepperoni laboris spinach pie officia incididunt culpa bacon & tomato pineapple consectetur bacon in extra cheese. Buffalo sauce exercitation ullamco chicken and bacon white pizza.</p>
         <p><a class="btn btn-lg btn-success" href="order.html" role="button">Order Now</a></p>
-        <div class="accordion" id="accordionExample">
+        <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Delivery Location
                 </button>
               </h5>
             </div>
         
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 <form action="">
-                    <label for="fName">First Name</label><br>
-                    <input type="text" id="fName" name="first name"><br>
-                    <label for="lName">Last Name</label><br>
-                    <input type="text" id="lName" name="last name"><br>
-                    <label for="addr_type">Address type:</label><br>
-                    <select name="addr_type" id="addr_type">
-                      <option value="house">House</option>
-                      <option value="apt">Apartment</option>
-                      <option value="business">Business</option>
-                      <option value="campus">Campus</option>
-                      <option value="hotel">Hotel</option>
-                      <option value="dorm">Dorm</option>
-                      <option value="other">Other</option>
-                    </select><br><br>
-                    <label for="address">Street Address</label><br>
-                    <input type="text" id="addr" name="address"><br>
-                    <label for="address">Street Address Line 2</label><br>
-                    <input type="text" id="addr" name="address"><br>
-                    <label for="city">City</label><br>
-                    <input type="text" id="city" name="city"><br>
-                    <label for="state">State</label><br>
-                    <input type="text" id="state" name="state"><br>
-                    <label for="phone">Phone Number</label><br>
-                    <input type="text" id="pNumber" name="phone number"><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email"><br>
-                </form>
+                  <label for="fName">First Name</label><br>
+                  <input type="text" id="fName" name="first name"><br>
+                  <label for="lName">Last Name</label><br>
+                  <input type="text" id="lName" name="last name"><br>
+                  <label for="addr_type">Address type:</label><br>
+                  <select name="addr_type" id="addr_type">
+                    <option value="house">House</option>
+                    <option value="apt">Apartment</option>
+                    <option value="business">Business</option>
+                    <option value="campus">Campus</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="dorm">Dorm</option>
+                    <option value="other">Other</option>
+                  </select><br><br>
+                  <label for="address">Street Address</label><br>
+                  <input type="text" id="addr" name="address"><br>
+                  <label for="address">Street Address Line 2</label><br>
+                  <input type="text" id="addrtwo" name="addressline2"><br>
+                  <label for="city">City</label><br>
+                  <input type="text" id="city" name="city"><br>
+                  <label for="state">State</label><br>
+                  <input type="text" id="state" name="state"><br>
+                  <label for="phone">Phone Number</label><br>
+                  <input type="text" id="pNumber" name="phone number"><br>
+                  <label for="email">Email</label><br>
+                  <input type="text" id="email" name="email"><br>
+              </form>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Build Your Order
                 </button>
               </h5>
-              <form action="">
-                <!--Crust Options --->
-                <p>Crush Options:</p>
-                <input type="radio" id="handtossed" name="hand tossed" value="handtossed">
-                <label for="handtossed">Hand Tossed</label><br>
-                <input type="radio" id="thin" name="thin" value="thin">
-                <label for="thin">Thin Crust</label><br>
-                <input type="radio" id="newyorkstyle" name="New York" value="New York Style">
-                <label for="newyorkstyle">New York Style</label><br>
-                <input type="radio" id="gluten" name="gluten" value="gluten free">
-                <label for="gluten">Gluten Free</label><br>
-                <!--Cheese Options --->
-                <p>Cheese Options:</p>
-                <input type="radio" id="light" name="light" value="light">
-                <label for="light">Light: no charge</label><br>
-                <input type="radio" id="normal" name="normal" value="normal">
-                <label for="normal">Normal(default): no charge</label><br>
-                <input type="radio" id="extra" name="extra" value="extra">
-                <label for="extra">Extra: +$2.99</label><br>
-                <input type="radio" id="double" name="double" value="double">
-                <label for="double">Double: +$3.99</label><br>
-                <!--Sauce Options --->
-                <p>Sauce Options:</p>
-                <input type="radio" id="regular" name="regular" value="regular">
-                <label for="regular">Regular Tomato: no charge</label><br>
-                <input type="radio" id="hearty" name="hearty" value="hearty">
-                <label for="hearty">Hearty Tomato: +$.99</label><br>
-                <input type="radio" id="bbq" name="bbq" value="bbq">
-                <label for="bbq">BBQ Sauce: +$1.99</label><br>
-                <!--Toppings --->
-                <fieldset class="checkboxgroup">
-                  <p>Toppings: Each topping is $.99</p>
-                  <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-                  <label for="pepperoni">Pepperoni</label>
-                  <input type="checkbox" id="sausage" name="sausage" value="sausage">
-                  <label for="sausage">Sausage</label>
-                  <input type="checkbox" id="ham" name="ham" value="ham">
-                  <label for="ham">Ham</label><br>
-                  <input type="checkbox" id="bacon" name="bacon" value="bacon">
-                  <label for="bacon">Bacon</label>
-                  <input type="checkbox" id="salami" name="salami" value="salami">
-                  <label for="salami">Salami</label>
-                  <input type="checkbox" id="peppers" name="peppers" value="peppers">
-                  <label for="peppers">Peppers</label><br>
-                  <input type="checkbox" id="olives" name="olives" value="olives">
-                  <label for="olives">Olives</label>
-                  <input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
-                  <label for="jalapenos">Jalapenos</label>
-                  <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
-                  <label for="mushrooms">Mushrooms</label><br>
-                  <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
-                  <label for="pineapple">Pineapple</label>
-                  <input type="checkbox" id="onion" name="onion" value="onion">
-                  <label for="onion">Onion</label>
-                </fieldset>
-                <p><a class="btn btn-success btn-sm" href="#" role="button">Next</a></p>
-              </form>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <form action="">
+                  <!--Crust Options --->
+                  <p>Crush Options:</p>
+                  <input type="radio" id="handtossed" name="hand tossed" value="handtossed">
+                  <label for="handtossed">Hand Tossed</label><br>
+                  <input type="radio" id="thin" name="thin" value="thin">
+                  <label for="thin">Thin Crust</label><br>
+                  <input type="radio" id="newyorkstyle" name="New York" value="New York Style">
+                  <label for="newyorkstyle">New York Style</label><br>
+                  <input type="radio" id="gluten" name="gluten" value="gluten free">
+                  <label for="gluten">Gluten Free</label><br>
+                  <!--Cheese Options --->
+                  <p>Cheese Options:</p>
+                  <input type="radio" id="light" name="light" value="light">
+                  <label for="light">Light: no charge</label><br>
+                  <input type="radio" id="normal" name="normal" value="normal">
+                  <label for="normal">Normal(default): no charge</label><br>
+                  <input type="radio" id="extra" name="extra" value="extra">
+                  <label for="extra">Extra: +$2.99</label><br>
+                  <input type="radio" id="double" name="double" value="double">
+                  <label for="double">Double: +$3.99</label><br>
+                  <!--Sauce Options --->
+                  <p>Sauce Options:</p>
+                  <input type="radio" id="regular" name="regular" value="regular">
+                  <label for="regular">Regular Tomato: no charge</label><br>
+                  <input type="radio" id="hearty" name="hearty" value="hearty">
+                  <label for="hearty">Hearty Tomato: +$.99</label><br>
+                  <input type="radio" id="bbq" name="bbq" value="bbq">
+                  <label for="bbq">BBQ Sauce: +$1.99</label><br>
+                  <!--Toppings --->
+                  <fieldset class="checkboxgroup">
+                    <p>Toppings: Each topping is $.99</p>
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" id="ham" name="ham" value="ham">
+                    <label for="ham">Ham</label><br>
+                    <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                    <label for="bacon">Bacon</label>
+                    <input type="checkbox" id="salami" name="salami" value="salami">
+                    <label for="salami">Salami</label>
+                    <input type="checkbox" id="peppers" name="peppers" value="peppers">
+                    <label for="peppers">Peppers</label><br>
+                    <input type="checkbox" id="olives" name="olives" value="olives">
+                    <label for="olives">Olives</label>
+                    <input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
+                    <label for="jalapenos">Jalapenos</label>
+                    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label><br>
+                    <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                    <label for="pineapple">Pineapple</label>
+                    <input type="checkbox" id="onion" name="onion" value="onion">
+                    <label for="onion">Onion</label>
+                  </fieldset>
+                  <p><a class="btn btn-success btn-sm" href="#" role="button">Finished Building Pizza</a></p>
+                </form>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Collapsible Group Item #3
                 </button>
               </h5>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
