@@ -2,8 +2,8 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #a72026;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
