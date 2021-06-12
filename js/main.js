@@ -1,14 +1,12 @@
 //Creating a Validation requirements for Delivery Location form.
+window.addEventListener("load", validate);
 function validate() {
-    const msg = () => {
-        alert("Missing require information!");
-    }
-    let myform = document.getElementById('deliveryInfo').required = true;
+    let myform = document.getElementById("deliveryInfo").elements;
     let orderStart = document.getElementById('startPizza');
-    document.addEventListener("DOMContentLoaded", () => {
-        orderStart.addEventListener("click", myform);
-        if(myform == false) {
-            msg;
+    
+    for(i = 0; i < myform.length; i++){
+        if (myform[i].value == ""){
+            alert("Missing require information!");
         }
-    });
+    }
 }
