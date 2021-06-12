@@ -80,7 +80,6 @@
         <h1>The House of Pizza</h1>
         <img src="/images/AdobeStock_228227544.jpeg" class="img-circle img-thumbnail img-responsive" alt="Pizza_logo">
         <p class="lead">Pizza ipsum dolor amet aute sausage occaecat deep crust. Pepperoni laboris spinach pie officia incididunt culpa bacon & tomato pineapple consectetur bacon in extra cheese. Buffalo sauce exercitation ullamco chicken and bacon white pizza.</p>
-        <p><a class="btn btn-lg btn-success" href="order.html" role="button">Order Now</a></p>
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
@@ -119,7 +118,8 @@
                   <label for="phone">Phone Number</label><br>
                   <input type="text" id="pNumber" name="phone number"><br>
                   <label for="email">Email</label><br>
-                  <input type="text" id="email" name="email"><br>
+                  <input type="text" id="email" name="email"><br><br>
+                  <p><a class="btn btn-lg btn-success" href="order.html" role="button">Build Your Pizza</a></p>
               </form>
               </div>
             </div>
@@ -198,13 +198,71 @@
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
+                  Billing Information
                 </button>
               </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <form action="">
+                  <input type="checkbox" id="samedelivery" name="same" value="samedeliveryinfo">
+                  <label for="onion">Same as delivery information</label><br>
+                  <label for="fName">First Name</label><br>
+                  <input type="text" id="fName" name="first name"><br>
+                  <label for="lName">Last Name</label><br>
+                  <input type="text" id="lName" name="last name"><br>
+                  <label for="addr_type">Address type:</label><br>
+                  <select name="addr_type" id="addr_type">
+                    <option value="house">House</option>
+                    <option value="apt">Apartment</option>
+                    <option value="business">Business</option>
+                    <option value="campus">Campus</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="dorm">Dorm</option>
+                    <option value="other">Other</option>
+                  </select><br><br>
+                  <label for="address">Street Address</label><br>
+                  <input type="text" id="addr" name="address"><br>
+                  <label for="address">Street Address Line 2</label><br>
+                  <input type="text" id="addrtwo" name="addressline2"><br>
+                  <label for="city">City</label><br>
+                  <input type="text" id="city" name="city"><br>
+                  <label for="state">State</label><br>
+                  <input type="text" id="state" name="state"><br>
+                  <h3>Payment</h3>
+                  <label for="cname">Name on Card</label><br>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
+                  <label for="ccnum">Credit card number</label><br>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+                  <label for="expmonth">Exp Month</label><br>
+                  <select name="expmonth" id="expmonth">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select><br>
+                  <label for="expyear">Exp Year</label><br>
+                  <select name="expmonth" id="expmonth">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select><br>
+                  <label for="cvv">CVV</label><br>
+                  <input type="text" id="cvv" name="cvv" placeholder="352"><br><br>
+                  <input type="submit" value="Complete Order" class="btn btn-success">
+              </form>
+              </div>
               </div>
             </div>
           </div>
