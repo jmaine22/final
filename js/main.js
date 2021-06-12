@@ -6,9 +6,8 @@ function validate() {
     orderStart.addEventListener("click", (e) => {
         for(i = 0; i < myform.length; i++){
             if (myform[i].validity){
-                orderStart.tabIndex = -1;
+                document.getElementById('startPizza').tabIndex = -1;
                 e.preventDefault();
-                myform.elements.style.borderColor = "red";
                 //alert("Missing require information!");
                 let myInput = myform[i];
                 console.log(myInput);
