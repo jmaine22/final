@@ -6,10 +6,12 @@ function validate() {
     orderStart.addEventListener("click", (e) => {
         for(i = 0; i < myform.length; i++){
             if (myform[i].validity){
-                //alert("Missing require information!");
-                let myInput = myform[i].elements;
-                console.log(myInput);
+                orderStart.tabIndex = -1;
                 e.preventDefault();
+                myform.elements.style.borderColor = "red";
+                //alert("Missing require information!");
+                let myInput = myform[i];
+                console.log(myInput);
                 //myInput.setCustomValidity('You need to fill this out');
                 // input.reportValidity();
             }
